@@ -1,6 +1,6 @@
-# 🧠 The Layman Guide to Our Machine Learning Math
+# 🧠 The Layman Guide to Our Machine Learning Math (Visual Edition)
 
-Welcome to the simple, plain-English breakdown of the data science and mathematics powering our Food Delivery Cost Optimization Engine. If you are completely new to machine learning, this guide will make everything perfectly clear using everyday examples.
+Welcome to the simple, plain-English breakdown of the data science and mathematics powering our Food Delivery Cost Optimization Engine. If you are completely new to machine learning, this guide will make everything perfectly clear using everyday examples and visual landscapes.
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to the simple, plain-English breakdown of the data science and mathemati
 
 In your first machine learning project, you built a **Classifier**. A classifier is like a **sorting machine** that drops things into fixed "yes or no" buckets (e.g., *Will the power grid collapse? Yes or No*). 
 
-In this second project, we are dealing with a **Continuous Regressor**. A regressor doesn't sort things into boxes; it acts like a **fluid forecasting dial**. It predicts a moving, infinite decimal dollar value (like `$4.52`, `$12.80`, or `$45.00`) based on changes in our environmental inputs.
+In this second project, we are dealing with a **Continuous Regressor**. A regressor doesn't sort things into boxes; it acts like a **fluid forecasting dial**. It predicts a moving, infinite decimal dollar value (like `$4.52`, `$12.80`, or `$45.00`) based on changes in our environmental clues.
 
 ---
 
@@ -28,7 +28,7 @@ Think of the balance between active scooter drivers and incoming lunch orders as
 * In real life, the app almost **never** sits in peaceful, perfect balance (`0.5`). 
 * During heavy rainstorms or peak lunch rushes, driver supply is instantly wiped out, slamming the data straight against the **0.0 wall**. 
 * During slow mid-afternoon slumps, orders dry up completely, pinning the drivers against the **1.0 wall**. 
-This forces the data into a **U-Shape**: completely cratered and empty in the quiet middle, but packing massive towers of data bunched up against the outer margins.
+This forces the data into a **U-Shape**, cratering in the quiet middle but packing massive towers right against the outer margins.
 
 ---
 
@@ -43,13 +43,11 @@ But real life doesn't add; **real life multiplies and compounds**. Let's use our
 
 In our project, if an order has a long 10-mile trip distance **AND** driver availability hits a critical shortage near 0.0, they multiply together. The driver shortage acts like a massive volume knob, violently twisting the baseline distance cost until the final price rockets exponentially into a **3D Surge Pricing Cliff**.
 
-<layout>
-  licensedImage(results=["1.2.2"])
-</layout>
+#### 🔍 The Topographical Optimization Surface:
+When features interact dynamically like this, they warp our data landscape into a twisting 3D mountain path:
 
-As seen in this topographic landscape:
-* **The Blue Valleys:** As long as driver availability stays high and stable, the pricing floor remains safe, flat, and affordable for the customer, no matter the distance.
-* **The Red Mountain Walls:** The moment availability drops near zero, the mathematical multiplication steps trigger an explosive surge, warping the data into a steep vertical cliff.
+* **The Safe Blue Valleys:** As long as driver availability stays high and stable, the pricing floor remains safe, flat, and affordable for the customer, no matter the distance.
+* **The Red Mountain Walls:** The moment availability drops near zero, the mathematical multiplication steps trigger an explosive surge, warping the data into a steep vertical pricing cliff.
 
 ---
 
@@ -75,11 +73,7 @@ RMSE is designed to **completely eliminate massive blunders** that would ruin a 
 * If the model misses a price by \$1.00, squaring it (1²) yields a minor penalty of **1**.
 * If the model misses a price by \$20.00, squaring it (20²) triggers a massive penalty explosion of **400**!
 
-<layout>
-  licensedImage(results=["1.1"])
-</layout>
+#### 🔍 Understanding the Decimal Paradox:
+When viewing small errors below \$1.00, squaring decimals (e.g., 0.10 × 0.10 = 0.01) actually pushes the **RMSE Line** flat against the floor below the **MAE Line**. Do not let this confuse you! 
 
-#### 🔍 Understanding the Paradox:
-When viewing small errors below \$1.00, squaring decimals (e.g., 0.10 × 0.10 = 0.01) actually pushes the **Red RMSE Line** flat against the floor below the **Blue MAE Line**. Do not let this confuse you! 
-
-What matters is **acceleration**. While the blue line climbs at a flat, fixed rate, the red line is accelerating **4 times faster** every time the error doubles. This aggressive curve forces our machine learning model to avoid major, business-ruining pricing disasters at all costs.
+What matters is **acceleration**. While the MAE line climbs at a flat, fixed rate, the RMSE line accelerates **4 times faster** every time the error doubles. This aggressive curve forces our machine learning model to avoid major, business-ruining pricing disasters at all costs.
