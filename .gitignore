@@ -1,0 +1,18 @@
+﻿# Isolated Virtual Environments
+hft_env/
+.venv/
+venv/
+ENV/
+
+# Local Production Databases & Heavy Assets
+data/*.db
+data/*.csv
+models/*.pkl
+
+# Operating System & IDE Cache Locks
+.vscode/
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
